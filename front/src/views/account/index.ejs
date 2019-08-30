@@ -1,0 +1,31 @@
+<%- contentFor('body') %>
+<section id="account">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <a href="/account/new" class="btn btn-marina">Nova conta</a>
+            </div>
+            <div class="col-12 col-md-6">
+                <h4 class="title bold">
+                    Acessar sua conta
+                </h4>
+                <form action="/account/login" method="POST">
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" name="email" placeholder="Entre com seu e-mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input type="password" class="form-control" name="password" placeholder="Entre com sua senha">
+                    </div>
+                    <div class="form-group">
+                        <a href="" class="lk-marina">Esqueceu a senha?</a>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-marina">ACESSAR</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

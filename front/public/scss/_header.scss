@@ -1,0 +1,93 @@
+header {
+    position: relative;
+    min-height: 80px;
+    background: $body-bg;
+    font-family: 'Rubik', sans-serif;
+
+    &.no-header{
+       height: auto; 
+       min-height: auto;
+    }
+
+    .logo{
+        font-size: 3em;
+        padding: 5px;
+    }
+
+    .account{
+        padding: 20px;
+    }
+
+    .search-container {
+        .search{
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            border: 1px solid $mundomarina;
+        }
+        button{
+            float: right;
+            padding: 7px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: $mundo-marina;
+            color: $white;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            &:hover{
+                background:$marina;
+            }
+        }
+    }
+
+
+    .navbar {
+        min-height: 4.5em;
+        z-index: 1;
+        background: $mundo-marina;
+        border: none;
+        font-size: 1em;
+        font-family: 'Rubik', sans-serif;
+        .navbar-collapse{
+            .nav{
+                .nav-item{
+                    .nav-link{
+                        position: relative;
+                        color: $white;
+                        &:hover{
+                            color:$marina;
+                            &::before {    
+                            visibility: visible;
+                            -webkit-transform: scaleX(1);
+                            transform: scaleX(1);
+                            }
+                        }
+                        &:active{
+                            color:$marina;
+                        }
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 1px;
+                            bottom: 2px;
+                            left: 0;
+                            background-color: $marina;
+                            visibility: hidden;
+                            -webkit-transform: scaleX(0);
+                            transform: scaleX(0);
+                            -webkit-transition: all 0.3s ease-in-out 0s;
+                            transition: all 0.3s ease-in-out 0s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

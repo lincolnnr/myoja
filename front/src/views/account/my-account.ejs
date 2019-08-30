@@ -1,0 +1,14 @@
+<%- contentFor('body') %>
+<section id="account">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h4 class="title bold">Minha conta</h4>
+                <span class="subtitle">Alterar dados da conta</span>
+                <form action="/account?_method=PUT" method="POST">
+                    <% include ./../partials/account/form %>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,59 @@
+<header class="no-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-3 text-center logo">
+                <a class="navbar-brand" href="/"><img src="https://www.mundomarina.com.br/image/cache/data/mundo-marina-logo-header-new-100x100h.png" alt=""></a>
+			</div>
+			
+			<div class="col-12 col-md-6 text-right account">
+			<div class="search-container">
+					<form>
+						<input type="text" placeholder="Pesquisar..." name="search" class="search">
+						<button type="submit"><i class="fa fa-search"></i></button>
+					</form>
+				</div>
+        	</div>
+            <div class="col-12 col-md-3 text-right account">
+                    <% if(user) {%>
+                        <div class="btn-group" role="group">
+                            <button id="btnGroupDrop1" type="button" class="lk-marina dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <%= user.name %>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                <a class="dropdown-item" href="#">Sair</a>
+                            </div>
+                        </div>
+                    <% } else { %>
+                        <a href="/account" class="lk-marina">
+                            entrar/ registrar
+                        </a>
+                    <% } %>
+                <a href="#" class="btn-round bg-marina">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+		<div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fas fa-female"></i> Meninas</a>
+					</li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-male"></i> Meninos</a></li>
+					<li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-school"></i> Cuidados</a></li>
+					<li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-school"></i> Alimentação</a></li>
+					<li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-school"></i> Banho</a></li>
+					<li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-school"></i> Decoração</a></li>
+					<li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-school"></i> Escola</a></li>
+					<li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-school"></i> Brinquedos</a></li>
+					<li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-school"></i> Praia</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

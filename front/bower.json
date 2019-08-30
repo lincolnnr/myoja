@@ -1,0 +1,26 @@
+{
+  "name": "front",
+  "description": "ecommerce based node.js",
+  "main": "app.js",
+  "authors": [
+    "Lincoln Nogueira"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "ecommmecer",
+    "nodejs",
+    "itturini"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}

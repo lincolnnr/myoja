@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik|Lato|Open+Sans|Varela+Round&display=swap");
+html {
+  height: 100%;
+  min-height: 100%;
+  font-family: "Varela Round", sans-serif; }
+
+body {
+  height: 100%;
+  min-height: 100%;
+  background: #FEFEFE;
+  font-family: "Varela Round", sans-serif; }
+
+.btn {
+  -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  border: 0; }
+
+.btn-marina {
+  background-color: #ca8490;
+  color: #FFF; }
+  .btn-marina:hover, .btn-marina:active {
+    background-color: #474A59;
+    color: #FFF;
+    transition: .3s all; }
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #BAD5D3; }
+
+.bg-marina {
+  background-color: #ca8490;
+  color: #FFF; }
+  .bg-marina:hover, .bg-marina:active {
+    background-color: #cc7281; }
+
+.lk-marina {
+  color: #ca8490;
+  text-decoration: none; }
+  .lk-marina:hover, .lk-marina:active {
+    color: #BAD5D3;
+    text-decoration: none; }
+
+.btn-round {
+  -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  position: relative;
+  text-align: center;
+  margin-top: 3px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  font-size: 18px;
+  border: 1px solid transparent;
+  color: #FFF; }
+  .btn-round:hover, .btn-round:active {
+    background: #BAD5D3;
+    color: #FFF; }
+
+.upper {
+  text-transform: uppercase !important; }
+
+.block {
+  display: block; }
+
+.title {
+  font-size: 2em;
+  font-family: "Varela Round", sans-serif; }
+  .title.bold {
+    font-weight: 700; }
+
+.subtitle {
+  font-size: 1em;
+  font-family: "Varela Round", sans-serif;
+  display: block; }
+  .subtitle.bold {
+    font-weight: 600; }
+
+#account {
+  padding: 20px 0; }
+
+header {
+  position: relative;
+  min-height: 80px;
+  background: #FEFEFE;
+  font-family: 'Rubik', sans-serif; }
+  header.no-header {
+    height: auto;
+    min-height: auto; }
+  header .logo {
+    font-size: 3em;
+    padding: 5px; }
+  header .account {
+    padding: 20px; }
+  header .search-container .search {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border: 1px solid #cc7281; }
+  header .search-container button {
+    float: right;
+    padding: 7px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ca8490;
+    color: #FFF;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px; }
+    header .search-container button:hover {
+      background: #BAD5D3; }
+  header .navbar {
+    min-height: 4.5em;
+    z-index: 1;
+    background: #ca8490;
+    border: none;
+    font-size: 1em;
+    font-family: 'Rubik', sans-serif; }
+    header .navbar .navbar-collapse .nav .nav-item .nav-link {
+      position: relative;
+      color: #FFF; }
+      header .navbar .navbar-collapse .nav .nav-item .nav-link:hover {
+        color: #BAD5D3; }
+        header .navbar .navbar-collapse .nav .nav-item .nav-link:hover::before {
+          visibility: visible;
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1); }
+      header .navbar .navbar-collapse .nav .nav-item .nav-link:active {
+        color: #BAD5D3; }
+      header .navbar .navbar-collapse .nav .nav-item .nav-link::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 2px;
+        left: 0;
+        background-color: #BAD5D3;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s; }
+
+footer {
+  background-color: #ca8490;
+  color: #FFF;
+  height: 10vh; }
+
+#products {
+  padding: 2em 0; }
+  #products .cat .list-group {
+    border-right: 1px solid #ececec; }
+    #products .cat .list-group:first-child {
+      border: 0; }
+    #products .cat .list-group .list-group-item {
+      border: 0;
+      border-top: 1px solid #ececec; }
+      #products .cat .list-group .list-group-item a {
+        color: #292929;
+        text-transform: capitalize; }
+        #products .cat .list-group .list-group-item a:hover, #products .cat .list-group .list-group-item a:active {
+          color: #ed283b;
+          text-decoration: none; }
+  #products .list_pro .preview {
+    position: relative; }
+  #products .list_pro .info {
+    text-align: center;
+    border: 1px solid #ececec;
+    padding: 1em; }
+    #products .list_pro .info .price {
+      position: relative; }
+      #products .list_pro .info .price strong {
+        display: block; }
+
+#line {
+  position: relative;
+  width: 100%;
+  height: 8em;
+  margin: 2em 0;
+  background: #cc7281; }
+
+#steps {
+  text-align: center;
+  padding: 2em 0; }
+  #steps .step i {
+    width: 4em;
+    height: 4em;
+    font-size: 2em;
+    background: #ca8490;
+    border-radius: 50%;
+    color: #BAD5D3;
+    line-height: 4em;
+    margin: 1em 0;
+    font-weight: 700; }
+  #steps .step h4 {
+    font-family: 'Roboto', sans-serif; }

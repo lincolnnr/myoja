@@ -1,0 +1,22 @@
+#steps{
+    text-align: center;
+    padding: 2em 0;
+
+    .step{
+        i{
+            width: 4em;
+            height: 4em;
+            font-size: 2em;
+            background: $mundo-marina;
+            border-radius: 50%;
+            color: $marina;
+            line-height: 4em;
+            margin: 1em 0;
+            font-weight: 700;
+        }
+
+        h4{
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+}

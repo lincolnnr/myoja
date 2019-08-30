@@ -1,0 +1,110 @@
+html{
+    height: 100%;
+    min-height: 100%;
+    font-family: $font-default;
+}
+
+body{
+    height: 100%;
+    min-height: 100%;
+    background: $body-bg;
+    font-family: $font-default;
+}
+
+.btn {
+    -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+    padding: 1.25rem 2rem;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    border: 0;
+}
+
+.btn-marina{
+    background-color: $mundo-marina;
+    color: $white;
+    &:hover, &:active{
+        background-color: $grey;
+        color: $white;
+        transition: .3s all;
+    }
+}
+
+.form-control{
+    &:focus{
+        box-shadow: none;
+        border-color: $marina;
+    }
+}
+
+.bg-marina{
+    background-color: $mundo-marina;
+    color: $white;
+    &:hover, &:active{
+        background-color: $mundomarina;
+    }
+}
+
+.lk-marina{
+    color: $mundo-marina;
+    text-decoration: none;
+    &:hover, &:active{
+        color: $marina;
+        text-decoration: none;
+    }
+}
+
+.btn-round {
+    -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    position: relative;
+    text-align: center;
+    margin-top: 3px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 18px;
+    border: 1px solid transparent;
+    color: $white;
+    &:hover, &:active{
+        background:$marina;
+        color: $white;
+    }
+}
+
+.upper {
+    text-transform: uppercase !important;
+}
+
+.block{
+    display: block;
+}
+
+.title {
+    font-size: 2em;
+    font-family: $font-default;
+    &.bold {
+        font-weight: 700;
+    }
+}
+
+.subtitle {
+    font-size: 1em;
+    font-family: $font-default;
+    display: block;
+    &.bold {
+        font-weight: 600;
+    }
+}
+
+#account{
+    padding: 20px 0;
+}

@@ -1,0 +1,41 @@
+#products {
+    padding: 2em 0;
+
+    .cat{
+        .list-group{
+            border-right: 1px solid $font-color-primary;
+            &:first-child{
+                border: 0;
+            }
+            .list-group-item{
+                border: 0;
+                border-top: 1px solid $font-color-primary;
+                a {
+                    color: $font-color-default;
+                    text-transform: capitalize;
+                    &:hover, &:active{
+                        color: $red-dark-default;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    .list_pro {
+        .preview{
+            position: relative;
+        }
+        .info{
+            text-align: center;
+            border: 1px solid $font-color-primary;
+            padding: 1em;
+            .price{
+                position: relative;
+                strong{
+                    display: block;
+                }
+
+            }
+        }
+    }
+}
